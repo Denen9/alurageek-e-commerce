@@ -11,6 +11,7 @@ import { obtenerProductos } from './api/api';
 import ProductCategory from './pages/ProductCategory/ProductCategory';
 import Login from './pages/Login/Login';
 import ProductAdd from './pages/ProductsAdd/ProductAdd';
+import ParticleBackground from './components/ParticleBackground/ParticleBackground';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <Router>
+      <ParticleBackground />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
