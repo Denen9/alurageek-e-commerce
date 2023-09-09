@@ -29,7 +29,7 @@ function ProductDetail({ products, categories }) {
     <div className='product-detail-container'>
       <section className='product'>
         <div className='img-container'>
-          <img src={product.image} alt={product.name} onClick={togglePopup} />
+          <img src={product.image} alt={product.name} onClick={togglePopup} loading="lazy"/>
         </div>
         <div className='product-info'>
           <h2>{product.name}</h2>

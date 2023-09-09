@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import "./Header.css"
-import Logo from '../Logo/Logo';
-import { AiOutlineSearch, AiOutlineSend} from 'react-icons/ai';
+import "./Header.css";
+
+// Importa Logo y los iconos de forma asíncrona
+const Logo = lazy(() => import('../Logo/Logo'));
+const AiOutlineSearch = lazy(() => import('react-icons/ai').then(module => ({ default: module.AiOutlineSearch })));
+const AiOutlineSend = lazy(() => import('react-icons/ai').then(module => ({ default: module.AiOutlineSend })));
 
 function Header() {
   // Estado para el término de búsqueda
@@ -34,7 +37,12 @@ function Header() {
     <header className='header'>
       <nav className='navbar'>
         <div className='header-logo'>
-          <Link to="/" className='no-underline'><Logo /></Link>
+          <Link to="/" className='no-underline'>
+          
+            <Suspense fallback={<div>Cargando...</div>}>
+              <Logo />
+            </Suspense>
+          </Link>
           <form onSubmit={handleSearchSubmit} className="header-search-form">
             <input
               className="header-search"
@@ -43,16 +51,23 @@ function Header() {
               onChange={handleSearch}
               placeholder="Buscar productos..."
             />
-            <button type="submit" className='search-button'><AiOutlineSearch className='search-button-i'/></button>
+            <button type="submit" className='search-button'>
+            
+              <Suspense fallback={<div>Cargando...</div>}>
+                <AiOutlineSearch className='search-button-i' />
+              </Suspense>
+            </button>
           </form>
         </div>
-        {!location.pathname.includes('/login') && ( // Verifica la ubicación actual
+        {!location.pathname.includes('/login') && ( 
           <Link to="/login" className='login-link'>
             <button className='header-login'>LOGIN</button>
           </Link>
         )}
         <button className='header-search-mobile' onClick={toggleSearchModal}>
-          <AiOutlineSearch />
+          <Suspense fallback={<div>Cargando...</div>}>
+            <AiOutlineSearch />
+          </Suspense>
         </button>
       </nav>
 

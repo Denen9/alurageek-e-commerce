@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Banner from '../../components/Banner/Banner';
-import Section from '../../components/Section/Section';
-import { obtenerProductos } from "../../api/api"; 
+import React, { useEffect, useState, lazy, Suspense } from "react";
+import { obtenerProductos } from "../../api/api";
+
+// Importa Banner y Section de forma asíncrona
+const Banner = lazy(() => import("../../components/Banner/Banner"));
+const Section = lazy(() => import("../../components/Section/Section"));
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,8 +28,6 @@ function Home() {
       });
   }, []);
 
-  console.log(products)
-
   return (
     <div className="home-container">
       {loading ? (
@@ -36,15 +36,18 @@ function Home() {
         <div>Error al cargar los productos: {error.message}</div>
       ) : (
         <>
-          <Banner />
-          {Object.keys(products).map((categoria) => (
-            <Section
-              key={categoria}
-              title={categoria}
-              products={products[categoria]}
-              sectionColor={products[categoria][0].color}
-            />
-          ))}
+          {/* Utiliza Suspense para cargar de forma asíncrona los componentes */}
+          <Suspense fallback={<div>Cargando...</div>}>
+            <Banner />
+            {Object.keys(products).map((categoria) => (
+              <Section
+                key={categoria}
+                title={categoria}
+                products={products[categoria]}
+                sectionColor={products[categoria][0].color}
+              />
+            ))}
+          </Suspense>
         </>
       )}
     </div>
@@ -52,10 +55,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
-
-
-

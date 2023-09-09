@@ -28,6 +28,7 @@ function Banner() {
           className="banner-img"
           src={images[currentImageIndex]}
           alt="Banner de la página"
+          loading="lazy"
         />
       </div>
       <div className="banner-content">
