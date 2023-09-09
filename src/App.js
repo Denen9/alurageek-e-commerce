@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search/:searchTerm" element={<SearchResults products={products} />} />
-        <Route path="/producto/:productName" element={<ProductDetail products={products} />} />
+        <Route path="/producto/:productId" element={<ProductDetail products={products} />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/productos/:category" element={<ProductCategory products={products}/>} />
         <Route path="/login" element={<Login />}/>

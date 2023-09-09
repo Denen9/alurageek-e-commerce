@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Banner.css";
 import Button from "../Button/Button";
-import { format } from "date-fns";
 
 
 const images = [
@@ -28,7 +27,6 @@ function Banner() {
           className="banner-img"
           src={images[currentImageIndex]}
           alt="Banner de la página"
-          loading="lazy"
         />
       </div>
       <div className="banner-content">

@@ -5,7 +5,7 @@ import Card from '../../components/Card/Card'
 import Popup from '../../components/Popup/Popup';
 
 function ProductDetail({ products, categories }) {
-  const { productName } = useParams();
+  const { productId } = useParams(); // Obtén el productId desde la URL
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -13,23 +13,22 @@ function ProductDetail({ products, categories }) {
     setShowPopup(!showPopup);
   };
 
-  const product = products.find((product) => product.name === productName);
+  const product = products.find((product) => product.id === productId || product.slug === productId);
 
   if (!product) {
     return <div>Producto no encontrado</div>;
   }
 
   const similarProducts = products.filter(
-    (p) => p.category === product.category && p.name !== product.name
+    (p) => p.category === product.category && p.id !== product.id
   );
 
   const limitedProducts = similarProducts.slice(0, 5);
-
   return (
     <div className='product-detail-container'>
       <section className='product'>
         <div className='img-container'>
-          <img src={product.image} alt={product.name} onClick={togglePopup} loading="lazy"/>
+          <img src={product.image} alt={product.name} onClick={togglePopup}/>
         </div>
         <div className='product-info'>
           <h2>{product.name}</h2>

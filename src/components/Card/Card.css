@@ -82,11 +82,12 @@
 .photo img {
   width: 150px;
   transition: .5s;
+  transform: translateY(-1rem);
 
 }
 
 .photo img:hover {
-  scale: 1.1;
+  scale: 1.05;
 
 }
 
@@ -157,10 +158,53 @@
   transition: 0.05s;
 }
 
-@media screen and (max-width: 768px) {
-  
-}
-@media screen and (max-width: 576px){
- 
-}
 
+@media screen and (max-width: 576px){
+  .card {
+    width: 230px;
+    height: 350px;
+  
+  }
+  
+  .card:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  
+  .title {
+    font-size: 1.2rem;
+    transform: translateY(-0.5rem);
+  }
+  
+  .photo {
+    clip-path: circle(170px at 70% 15%);
+  }
+  
+  .card:hover > .photo {
+    clip-path: circle(200px at 65% 5%);
+  }
+  
+  .photo img {
+    width: 200px;
+  }
+  
+  .photo img:hover {
+    scale: 1.1;
+  
+  }
+  
+  .feature {
+    font-size: 1.2rem;
+    transform: translateY(-0.5rem);
+  }
+  
+  .card:hover .feature {
+    transition-delay: 0;
+  }
+  
+
+  .btn-buy {
+    transform: translateY(10px);
+  }
+
+}

@@ -12,6 +12,7 @@ function ProductCategory({ products }) {
   const toggleSaber = () => {
     setIsSaberOpened(!isSaberOpened);
   };
+  
 
   return (
     <div className="productCategoryContainer">
@@ -27,7 +28,7 @@ function ProductCategory({ products }) {
         </div>
         {category === "Star Wars" &&(<span className="lightsaberClick">Haz Click en el Lightsaber!</span>)}
       </div>
-      <div className="card-container">
+      <div className="product-category-card">
         {categoryProducts.map((product) => (
           <Card key={product.id} product={product} />
         ))}

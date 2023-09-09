@@ -58,6 +58,15 @@
     color: var(--color-font);
 }
 
+.product-category-card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+
+
 @media screen and (max-width: 1024px){
     .productCategoryContainer{
         margin: 10rem 4rem;
@@ -140,12 +149,17 @@
     }
     
     .lightsaberSpanOpened{
-        height: 15px;
+        height: 10px;
         width: 100%;
         margin-right: 0;
     }
     .lightsaberClick{
         font-size: .75rem;
+        margin-top: 2rem;
+    }
+
+    .product-category-card{
+        justify-content: center;
     }
 }
 
@@ -175,6 +189,12 @@
         width: 100%;
         margin-right: 0;
     }
+
+    .product-category-card{
+        justify-content: center;
+        gap: 6rem;
+    }
+    
 }
 
 

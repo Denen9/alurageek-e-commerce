@@ -20,17 +20,16 @@ function Card({ product }) {
     <section className="product-container product-1">
       <div className="card" style={cardStyle}>
         <div className="photo">
-          <img src={product.image} alt={product.name} onClick={togglePopup} loading="lazy" width="300" height="200"/>
+          <img src={product.image} alt={product.name} onClick={togglePopup}/>
         </div>
         <div className="content">
           <div className="title">{product.name}</div>
           <div className="feature">
             {"$" + product.price}
           </div>
-          <Link to={`/producto/${product.name}`} className='btn-buy'>Ver Producto</Link>
+          <Link to={`/producto/${product.id}`} className='btn-buy'>Ver Producto</Link>
         </div>
       </div>
-      {/* Utiliza Suspense para cargar de forma asíncrona el componente Popup */}
       <Suspense fallback={<div>Cargando...</div>}>
         {showPopup && <Popup product={product} onClose={togglePopup} />}
       </Suspense>

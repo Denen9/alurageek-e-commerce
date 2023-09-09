@@ -1,17 +1,15 @@
-import React, { useCallback, lazy, Suspense } from "react";
+import React, { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import particlesConfig from "../particles-config";
+import Particles from "react-tsparticles";
 
-const Particles = lazy(() => import("react-tsparticles"));
 
 const ParticleBackground = () => {
   const particlesInit = useCallback((engine) => loadFull(engine), []);
 
   return (
     <div>
-      <Suspense fallback={<div>Cargando...</div>}>
         <Particles options={particlesConfig} init={particlesInit} />
-      </Suspense>
     </div>
   );
 };
