@@ -1,0 +1,34 @@
+.product-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+  }
+  
+  .popup-content {
+    position: relative;
+    background-color: #fff;
+    width: 25rem;
+  }
+
+  .popup-content img{
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .close-icon {
+    position: absolute;
+    right: 0;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    color: var(--color-font);
+    cursor: pointer;
+  }

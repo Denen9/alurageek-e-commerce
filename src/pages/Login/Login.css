@@ -1,0 +1,28 @@
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 6rem;
+
+}
+.loginTitle{
+    position: relative;
+    color: var(--color-font);
+    font-size: 2rem;
+}
+
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm{
+    position: relative;
+}
+
+.loginButton{
+    margin-top: 2rem;
+}

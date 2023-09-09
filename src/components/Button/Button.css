@@ -1,0 +1,39 @@
+
+.button {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--color-primary);
+    z-index: 1000;
+    transition: all 0.7s;
+  }
+  .button-span{
+    position: relative;
+    z-index: 5000;
+  }
+  .button:hover::before {
+    width: 160%;
+  }

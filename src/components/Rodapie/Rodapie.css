@@ -1,0 +1,12 @@
+.rodapie-container{
+    background-color: #000;
+    color: var(--color-background-light);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.rodapie-text {
+    font-size: 0.75rem;
+}

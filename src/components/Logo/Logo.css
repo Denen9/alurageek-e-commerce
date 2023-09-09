@@ -1,0 +1,46 @@
+.logo-container{
+    display: flex;
+}
+
+.header-logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-alura {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.header-geek {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #464646;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 576px){
+    
+    .header-logo-img{
+        width: 1.85rem;
+        height: 1.85rem;
+    }
+    
+    .header-alura {
+        font-size: 1.2rem;
+
+    }
+    
+    .header-geek {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+}

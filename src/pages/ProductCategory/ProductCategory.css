@@ -1,0 +1,180 @@
+.productCategoryContainer{
+    margin: 10rem 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.productCategory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.productCategoryTitle{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-font);
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 1rem solid red;
+
+}
+.lightsaber{
+    display: flex;
+    align-items: center;
+}
+.lightsaberImg{
+    width: 250px;
+    flex-shrink: 3;
+    cursor: pointer;
+    filter: drop-shadow(0 10px 5px #0000008f);
+}
+
+.lightsaberSpan{
+    height: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 0;
+    transition: all 1s;
+}
+
+.lightsaberSpanOpened{
+    background-color: #fff;
+    height: 30px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 30px 30px rgba(255, 0, 0, 0.75);
+
+}
+.lightsaberClick{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: var(--color-font);
+}
+
+@media screen and (max-width: 1024px){
+    .productCategoryContainer{
+        margin: 10rem 4rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productCategory{
+        padding-bottom: 4rem;
+    }
+    
+    .productCategoryTitle{
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--color-font);
+        margin-bottom: 2rem;
+        padding-left: 0.75rem;
+        border-left: .75rem solid red;
+    }
+    .lightsaber{
+        display: flex;
+        align-items: center;
+        
+    }
+    .lightsaberImg{
+        position: relative;
+        width: 200px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .lightsaberSpan{
+        height: 15px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 0;
+        margin-right: 0;
+        transition: all 1s;
+    }
+    
+    .lightsaberSpanOpened{
+        background-color: #fff;
+        height: 20px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        margin-right: 0;
+        border-bottom-right-radius: 20px;
+    }
+    .lightsaberClick{
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .productCategoryContainer{
+        margin: 10rem 2rem;
+    }
+
+    .productCategory{
+        padding-bottom: 2rem;
+    }
+    
+    .productCategoryTitle{
+        font-size: 2.5rem;
+        margin: 0 0 2rem 0;
+        padding-left: 0.5rem;
+        border-left: .5rem solid red;
+    }
+
+    .lightsaberImg{
+        width: 120px;
+    }
+    
+    .lightsaberSpan{
+        height: 15px;
+        margin-right: 0;
+    }
+    
+    .lightsaberSpanOpened{
+        height: 15px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .lightsaberClick{
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width:576px){
+    .productCategoryContainer{
+        margin: 10rem 2rem;
+    }
+    
+    .productCategoryTitle{
+        font-size: 2.5rem;
+        margin: 0 0 2rem 0;
+        padding-left: 0.5rem;
+        border-left: .5rem solid red;
+    }
+
+    .lightsaberImg{
+        width: 100px;
+    }
+    
+    .lightsaberSpan{
+        height: 5px;
+        margin-right: 0;
+    }
+    
+    .lightsaberSpanOpened{
+        height: 15px;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+

@@ -1,0 +1,19 @@
+
+.productAddContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 10rem;
+    flex-direction: column;
+}
+
+.productAddTitle{
+    font-size: 3rem;
+    color: var(--color-font);
+}
+
+.productAddForm{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,234 @@
+
+.product-detail-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product {
+    display: flex;
+    margin: 12rem 6rem 8rem 6rem;
+}
+
+.img-container {
+    width: 600px;
+    background-color: #fff;
+    padding: 2rem 6rem;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    filter: drop-shadow(0 0 30px #ff2424);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.img-container img:hover {
+    transform: scale(1.3);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info h2, .product-info p {
+    color: var(--color-font);
+    
+}
+
+.product-info h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 2rem;
+}
+
+.product-info p:first-child {
+    font-weight: 700;
+}
+
+.product-info p {
+    line-height: 150%;
+    font-size: 1.2rem;
+    margin: 0 2rem
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.similar-products-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 6rem;
+    padding-bottom: 4rem;
+}
+
+.similar-products-container h3{
+    font-size: 1.5rem;
+    color: var(--color-font);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.similar-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    
+    .product {
+        margin: 8rem 4rem 2rem 4rem;
+    }
+    
+    .img-container {
+        width: 600px;
+        background-color: #fff;
+        padding: 0 4rem 0 4rem;
+    }
+    
+    .img-container img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .img-container img:hover {
+        transform: scale(1.2);
+    }
+    
+    .product-info h2 {
+        font-size: 2rem;
+    }
+    
+    .product-info p {
+        line-height: 150%;
+        font-size: 1rem;
+    }
+    
+    .similar-products-container {
+        margin: 2rem 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .similar-products-container h3{
+        font-size: 1.5rem;
+    }
+    
+    .similar-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .product {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 2rem 0;
+    }
+    
+    .img-container {
+        width: 300px;
+        background-color: #fff;
+        padding: 8rem 0 2rem 0;
+    }
+    .img-container img:hover {
+        transform: scale(1.1);
+    }
+    
+    .img-container img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .product-info {
+        margin: 2rem 4rem;
+    }
+    
+    .product-info h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    
+    .product-info p {
+        line-height: 150%;
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .similar-products-container {
+        margin: 0 4rem 0 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .similar-products-container h3{
+        font-size: 1.5rem;
+    }
+    
+    .similar-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .product {
+        flex-direction: column;
+        margin: 0 0 2rem 0;
+    }
+    
+    .img-container {
+        width: 250px;
+        background-color: #fff;
+        padding: 8rem 0 2rem 0;
+    }
+    
+    .img-container img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .img-container img:hover {
+        transform: scale(1);
+    }
+
+
+    .product-info {
+        margin: 2rem 2rem;
+    }
+    
+    .product-info h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    
+    .product-info p {
+        line-height: 150%;
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .similar-products-container {
+        margin: 0 2rem 0 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .similar-products-container h3{
+        font-size: 1.5rem;
+    }
+    
+    .similar-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+

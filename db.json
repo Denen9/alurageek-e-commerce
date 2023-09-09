@@ -1,0 +1,159 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "products": [
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "1",
+        "name": "Kylo REN",
+        "price": 199.99,
+        "image": "/images/Star Wars/f59c8fc93dd4c73cda3d0cb7a0c758a8.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "2",
+        "name": "Taza Stormtrooper",
+        "price": 149.99,
+        "image": "/images/Star Wars/839c11fc3105027e126215f3647fa5b0.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "3",
+        "name": "Figura Stormtrooper",
+        "price": 199.99,
+        "image": "/images/Star Wars/2af26846110fb131c9617e7af1a8d724.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "4",
+        "name": "Darth Vader",
+        "price": 199.99,
+        "image": "/images/Star Wars/31785f700a9fb63c75604c23eb944720.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "5",
+        "name": "Figura Yoda",
+        "price": 149.99,
+        "image": "/images/Star Wars/c4cea6462e083470202684c700aa5a07.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "6",
+        "name": "Grogu",
+        "price": 149.99,
+        "image": "/images/Star Wars/Grogu.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "6",
+        "name": "Grogu",
+        "price": 149.99,
+        "image": "/images/Star Wars/Grogu.webp"
+      },
+      {
+        "category": "Star Wars",
+        "color": "#FF4343",
+        "id": "6",
+        "name": "Grogu",
+        "price": 149.99,
+        "image": "/images/Star Wars/Grogu.webp"
+      },
+      {
+        "category": "Consolas",
+        "color": "#2A7AE4",
+        "id": "7",
+        "name": "DualSense Play Station",
+        "price": 499.99,
+        "image": "/images/Consoles/unsplash_0POwK6iAiRQ.png"
+      },
+      {
+        "category": "Consolas",
+        "color": "#2A7AE4",
+        "id": "8",
+        "name": "Play Station 5",
+        "price": 449.99,
+        "image": "/images/Consoles/unsplash_caNzzoxls8Q.png"
+      },
+      {
+        "category": "Consolas",
+        "color": "#2A7AE4",
+        "id": "9",
+        "name": "Nintendo Switch",
+        "price": 299.99,
+        "image": "/images/Consoles/unsplash_wa5z9o9fgjw.png"
+      },
+      {
+        "category": "Consolas",
+        "color": "#2A7AE4",
+        "id": "10",
+        "name": "Xbox Series X",
+        "price": 299.99,
+        "image": "/images/Consoles/unsplash_Zjn4dT993-g.png"
+      },
+      {
+        "category": "Consolas",
+        "color": "#2A7AE4",
+        "id": "11",
+        "name": "Nintendo",
+        "price": 299.99,
+        "image": "/images/Consoles/unsplash_ZV7lnfyQLmA.png"
+      },
+      {
+        "category": "Otros",
+        "color": "#F57E00",
+        "id": "12",
+        "name": "Camisa SNES",
+        "price": 599.99,
+        "image": "/images/Others/unsplash_bUgaIaZysH0.png"
+      },
+      {
+        "category": "Otros",
+        "color": "#F57E00",
+        "id": "13",
+        "name": "Camisa Atari",
+        "price": 899.99,
+        "image": "/images/Others/unsplash_fMP-oCze3AY.png"
+      },
+      {
+        "category": "Otros",
+        "color": "#F57E00",
+        "id": "14",
+        "name": "Visor y controles VR",
+        "price": 899.99,
+        "image": "/images/Others/unsplash_MxVkWPiJALs.png"
+      },
+      {
+        "category": "Otros",
+        "color": "#F57E00",
+        "id": "15",
+        "name": "Pikachu",
+        "price": 599.99,
+        "image": "/images/Others/unsplash_r27umXAelDc.png"
+      },
+      {
+        "category": "Otros",
+        "color": "#F57E00",
+        "id": "16",
+        "name": "Sonic",
+        "price": 899.99,
+        "image": "/images/Others/unsplash_sYVY_ZKwaxU.png"
+      }
+    
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

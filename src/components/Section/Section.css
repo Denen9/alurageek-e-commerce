@@ -1,0 +1,109 @@
+
+.section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 6rem 6rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  color: var(--color-background-light);
+  margin-left: 1rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  color: var(--color-background-light);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.button-section-title,
+.button-section h4 {
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-section h4:hover {
+  color: var(--color-background-light-hover);
+}
+
+.section-icon {
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .section {
+    margin: 4rem 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .card-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .button-section h4 {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    margin: 4rem 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .button-section h4 {
+    font-size: 0.85rem;
+  }
+}
+
+  
+  
+  
+  
+  
