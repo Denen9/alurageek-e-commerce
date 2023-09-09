@@ -20,7 +20,7 @@ function ProductCategory({ products }) {
         <div className="lightsaber">
         {category === "Star Wars" && (
           <>
-            <img className="lightsaberImg" src="/images/star-wars-2369317_1920.png" alt="Sable de luz" onClick={toggleSaber} />
+            <img className="lightsaberImg" src="/images/star-wars-2369317_1920.webp" alt="Sable de luz" onClick={toggleSaber} />
             <span className={`lightsaberSpan ${isSaberOpened ? "lightsaberSpanOpened" : ""}`}></span>
           </>
           )}

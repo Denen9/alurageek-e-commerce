@@ -5,8 +5,8 @@ import { format } from "date-fns";
 
 
 const images = [
-  "/images/EikUsWkXYAE1Sct.jpg",
-  "/images/ULTRA-BlogIMG2003-1.jpg"
+  "/images/EikUsWkXYAE1Sct.webp",
+  "/images/ULTRA-BlogIMG2003-1.webp"
 ];
 
 function Banner() {
