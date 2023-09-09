@@ -8,7 +8,6 @@ import Footer from './components/Footer/Footer';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Rodapie from './components/Rodapie/Rodapie';
 import { obtenerProductos } from './api/api';
-import ParticleBackground from './components/ParticleBackground/ParticleBackground';
 import ProductCategory from './pages/ProductCategory/ProductCategory';
 import Login from './pages/Login/Login';
 import ProductAdd from './pages/ProductsAdd/ProductAdd';
@@ -32,7 +31,6 @@ function App() {
 
   return (
     <Router>
-      <ParticleBackground />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
