@@ -20,7 +20,7 @@ function Card({ product }) {
     <section className="product-container product-1">
       <div className="card" style={cardStyle}>
         <div className="photo">
-          <img src={product.image} alt={product.name} onClick={togglePopup} loading="lazy"/>
+          <img src={product.image} alt={product.name} onClick={togglePopup} loading="lazy" width="300" height="200"/>
         </div>
         <div className="content">
           <div className="title">{product.name}</div>
