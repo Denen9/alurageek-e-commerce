@@ -1,0 +1,18 @@
+.notFoundContainer{
+    background-color: red;
+    position: relative;
+    
+}
+
+.NotFoundBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem;
+}
+
+.NotFoundBox img{
+    width: 500px;
+}

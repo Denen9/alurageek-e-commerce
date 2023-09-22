@@ -4,16 +4,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem 10rem;
+    margin: 10rem 6rem 8rem 6rem; 
     flex-direction: column;
 }
 
-.productAddTitle{
-    font-size: 3rem;
-    color: var(--color-font);
+.productAddBox{
+    border: 0.5rem solid #2A7AE4;
+    padding: 2rem 1rem;
 }
+
+
+.productAddTitle{
+    color: var(--color-font);
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
 
 .productAddForm{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 576px){
+    .productAddContainer{
+        margin: 10rem 2rem 6rem 2rem; 
+    }
+
+    .productAddTitle{
+        font-size: 1.75rem;
+    }
+    
 }

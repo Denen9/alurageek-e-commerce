@@ -125,7 +125,7 @@ const particlesConfig = {
         "minimumValue": 8,
         "enable": true
       },
-      "value": 10 // Tamaño de partículas más pequeñas
+      "value": 10
     }
   },
   "detectRetina": true

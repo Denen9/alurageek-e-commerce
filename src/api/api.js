@@ -32,10 +32,3 @@ export const subirProducto = async (nuevoProducto) => {
   }
 };
 
-export const eliminarProducto = async (productId) => {
-  try {
-    await api.delete(`/products/${productId}`);
-  } catch (error) {
-    throw error;
-  }
-};

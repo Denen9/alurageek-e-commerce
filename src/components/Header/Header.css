@@ -63,7 +63,7 @@
   color: var(--color-font);
 }
 
-.header-login {
+.header-login, .header-admin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,9 +80,10 @@
     cursor: pointer;
 }
 
-.login-link{
+.login-link, .admin-link{
   text-decoration: none;
 }
+
 
 .header-search-mobile {
   position: relative;

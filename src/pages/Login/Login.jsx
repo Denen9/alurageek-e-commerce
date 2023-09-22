@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
 
     if (!validatePassword(formData.password)) {
-      setErrors({ ...errors, password: "La contraseña no cumple con los requisitos." });
+      setErrors({ ...errors, password: "La contraseña debe tener entre 8 y 16 caracteres." });
       return;
     }
 

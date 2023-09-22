@@ -4,8 +4,8 @@ import "./ProductDetail.css"
 import Card from '../../components/Card/Card'
 import Popup from '../../components/Popup/Popup';
 
-function ProductDetail({ products, categories }) {
-  const { productId } = useParams(); // Obtén el productId desde la URL
+function ProductDetail({ products}) {
+  const { productId } = useParams();
 
   const [showPopup, setShowPopup] = useState(false);
 

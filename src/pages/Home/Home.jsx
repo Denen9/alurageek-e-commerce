@@ -1,8 +1,7 @@
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, useState, lazy} from "react";
 import { obtenerProductos } from "../../api/api";
+import Banner from "../../components/Banner/Banner";
 
-// Importa Banner y Section de forma asíncrona
-const Banner = lazy(() => import("../../components/Banner/Banner"));
 const Section = lazy(() => import("../../components/Section/Section"));
 
 function Home() {
@@ -36,8 +35,6 @@ function Home() {
         <div>Error al cargar los productos: {error.message}</div>
       ) : (
         <>
-          {/* Utiliza Suspense para cargar de forma asíncrona los componentes */}
-          <Suspense fallback={<div>Cargando...</div>}>
             <Banner />
             {Object.keys(products).map((categoria) => (
               <Section
@@ -47,7 +44,6 @@ function Home() {
                 sectionColor={products[categoria][0].color}
               />
             ))}
-          </Suspense>
         </>
       )}
     </div>

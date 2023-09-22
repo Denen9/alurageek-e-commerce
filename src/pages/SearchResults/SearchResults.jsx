@@ -7,12 +7,12 @@ import "./SearchResults.css"
 function SearchResults({ products }) {
   const { searchTerm } = useParams();
 
-  // Verifica si el termino coincide
+  // Verificar si el termino coincide
   const matchingCategory = products.find(
     (product) => product.category.toLowerCase() === searchTerm.toLowerCase()
   );
 
-  // Filtra los productos segun la busqueda o categoria
+  // Filtrar los productos segun la busqueda o categoria
   const filteredProducts = matchingCategory
     ? products.filter((product) => product.category.toLowerCase() === searchTerm.toLowerCase())
     : products.filter((product) =>

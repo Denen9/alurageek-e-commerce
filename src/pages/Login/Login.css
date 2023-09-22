@@ -4,25 +4,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10rem 6rem;
+    margin: 10rem 6rem 8rem 6rem; 
+    position: relative;
 
 }
 .loginTitle{
     position: relative;
     color: var(--color-font);
     font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .loginBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    border: 0.5rem solid #2A7AE4;
+    padding: 2rem 1rem;
+
 }
 .loginForm{
     position: relative;
 }
 
-.loginButton{
-    margin-top: 2rem;
+@media screen and (max-width: 576px){
+    .loginContainer{
+        margin: 10rem 2rem 6rem 2rem; 
+        position: relative;
+    
+    }
+    .loginTitle{
+        font-size: 1.75rem;
+    }
+
 }

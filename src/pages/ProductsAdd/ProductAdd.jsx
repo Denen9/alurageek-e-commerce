@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./ProductAdd.css"
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import { subirProducto } from '../../api/api';
+import Button from '../../components/Button/Button';
 
 const ProductAdd = () => {
   const [product, setProduct] = useState({
@@ -43,6 +43,7 @@ const ProductAdd = () => {
 
   return (
     <div className='productAddContainer'>
+      <div className='productAddBox'>
       <h2 className='productAddTitle'>Agregar Nuevo Producto</h2>
       <form className="productAddForm" onSubmit={handleSubmit}>
         <TextField
@@ -89,9 +90,10 @@ const ProductAdd = () => {
           required
         />
         <Button type="submit">
-          Agregar Producto
+          Agregar producto
         </Button>
       </form>
+      </div>
     </div>
   );
 };
